@@ -69,7 +69,7 @@ jobs:
           name: Setup Environment Variables
           command: |
             echo "export TAG_SUFFIX=$(date +%Y%m%d%H%M%S)" >> $BASH_ENV
-            echo 'export IMAGE="lovepetveteriner/lvp-adb-be:${CIRCLE_BRANCH}-${TAG_SUFFIX}"' >> $BASH_ENV
+            echo 'export IMAGE="lovepetveteriner/lpv-adb-be:${CIRCLE_BRANCH}-${TAG_SUFFIX}"' >> $BASH_ENV
       - run:
           name: Publish Docker image with Jib
           command: |

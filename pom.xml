@@ -123,7 +123,7 @@
         <version>1.0.2</version>
         <configuration>
           <to>
-            <image>registry.hub.docker.com/todarch/${project.artifactId}:${project.version}-${build.number}</image>
+            <image>registry.hub.docker.com/lovepetveteriner/${project.artifactId}:${project.version}-${build.number}</image>
           </to>
           <container>
             <jvmFlags>
