@@ -122,13 +122,8 @@
         <artifactId>jib-maven-plugin</artifactId>
         <version>1.0.2</version>
         <configuration>
-          <!--<from>-->
-            <!--<image>${from.image}</image>-->
-          <!--</from>-->
           <to>
-            <to>
-              <image>registry.hub.docker.com/todarch/${project.artifactId}:${project.version}-${build.number}</image>
-            </to>
+            <image>registry.hub.docker.com/todarch/${project.artifactId}:${project.version}-${build.number}</image>
           </to>
           <container>
             <jvmFlags>
