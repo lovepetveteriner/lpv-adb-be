@@ -7,6 +7,8 @@ import org.springframework.stereotype.Component;
 import java.util.Objects;
 
 /**
+ * Properties to customize system email behaviors.
+ *
  * @author selimssevgi
  */
 @ConfigurationProperties("lpv.mail")

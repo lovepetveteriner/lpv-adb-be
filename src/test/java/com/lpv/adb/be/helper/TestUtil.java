@@ -5,9 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
 
-/**
- * @author selimssevgi
- */
 public final class TestUtil {
   private TestUtil() {
     throw new AssertionError("Cannot create a object from utility class");

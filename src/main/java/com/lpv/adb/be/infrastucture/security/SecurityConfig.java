@@ -11,6 +11,8 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.web.cors.CorsConfiguration;
 
 /**
+ * Simple Spring Security config.
+ *
  * @author selimssevgi
  */
 @EnableWebSecurity

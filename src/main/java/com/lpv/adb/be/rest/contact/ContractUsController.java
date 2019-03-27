@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
+ * Handles the requests coming from static site contact form.
+ *
  * @author selimssevgi
  */
 @RestController
@@ -19,12 +21,15 @@ public class ContractUsController {
 
   private final LpvEmailProperties lpvEmailProperties;
 
+  /**
+   * Forwards the message request as email to system owners.
+   */
   @PostMapping("/non-secured/send-email")
   public void sendMail(@RequestBody SendEmailReq emailReq) {
     String text =
-        "isim: " + emailReq.getName() + "\n" +
-        "email: " + emailReq.getEmail() + "\n" +
-        "mesaj: " + emailReq.getMessage();
+        "isim: " + emailReq.getName() + "\n"
+            + "email: " + emailReq.getEmail() + "\n"
+            + "mesaj: " + emailReq.getMessage();
 
     SimpleEmailCmd emailCommand = new SimpleEmailCmd();
     emailCommand.setTo(lpvEmailProperties.getSystemTo());

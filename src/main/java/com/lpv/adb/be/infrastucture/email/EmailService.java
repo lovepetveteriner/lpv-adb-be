@@ -8,6 +8,7 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 /**
+ * Sends emails using JavaMailSender api.
  * @author selimssevgi
  */
 @Service
