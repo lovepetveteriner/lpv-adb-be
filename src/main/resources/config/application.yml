@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: dev
+  mail:
+    host: smtp.zoho.eu
+    port: 465 # 587 tls, 465 ssl
+    username: bilgi@lovepetveteriner.com
+    password: "${LPV_MAIL_PASSWORD}"
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+          auth: true
+          starttls.enable: true
+          ssl.enable: true
+          ssl.trust: smtp.zoho.eu
+
+lpv:
+  mail:
+    systemTo: lovepetveteriner@gmail.com
+    staticSiteMessageSubject: ZMV

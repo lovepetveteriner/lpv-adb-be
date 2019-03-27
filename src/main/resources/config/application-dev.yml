@@ -1,0 +1,6 @@
+server:
+  port: 9991
+
+lpv:
+  mail:
+    systemTo: lovepetveteriner@gmail.com
