@@ -17,6 +17,18 @@ spring:
           starttls.enable: true
           ssl.enable: true
           ssl.trust: smtp.zoho.eu
+    datasource:
+      url: "${JDBC_DATABASE_URL}"
+      username: "${JDBC_DATABASE_USERNAME}"
+      password: "${JDBC_DATABASE_PASSWORD}"
+      jpa:
+        properties:
+          hibernate:
+            dialect: org.hibernate.dialect.MySqlDialect
+            default_schema: "${spring.flyway.schemas}"
+      flyway:
+        schemas: lpv_adb_be
+
 
 lpv:
   mail:

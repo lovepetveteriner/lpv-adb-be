@@ -4,3 +4,7 @@ server:
 lpv:
   mail:
     systemTo: lovepetveteriner@gmail.com
+
+JDBC_DATABASE_URL: "jdbc:mysql://localhost/lpv_db"
+JDBC_DATABASE_USERNAME: lpv
+JDBC_DATABASE_PASSWORD: lpv_dev_pass
